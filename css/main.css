@@ -79,5 +79,5 @@ table {
 #clickToScroll{
 	position: absolute;
 	opacity:0;
-	transition: all cubic-bezier(0.7, 0.46, 0.4, 1.38) 1s;
+	/*transition: all cubic-bezier(0.7, 0.46, 0.4, 1.38) 1s;*/
 }
