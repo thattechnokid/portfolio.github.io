@@ -70,6 +70,7 @@ table {
 	transform: translate(-50%,-50%);
 	color: white;
 	font-weight: 500;
+	text-decoration: none;
 }
 .click-to-scroll:hover{
 	text-decoration: none;
