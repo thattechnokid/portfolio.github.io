@@ -160,6 +160,7 @@ h6 { font-size: .75em; }
 	font-weight: 600;
 	text-decoration: none;
 	font-size: 20px;
+	font-family: 'Merriweather Sans',sans-serif;
 }
 .click-to-scroll:hover{
 	text-decoration: none;
