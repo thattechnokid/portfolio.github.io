@@ -4,6 +4,7 @@ $(document).ready(function(){
     opacity:'1.0'
   },500);
 
+// -----For typed text------
 
     var options = {
       strings: ["I Build Websites", "I Build Web Applications"],
@@ -15,5 +16,17 @@ $(document).ready(function(){
     }
     var typed = new Typed(".typed-txt", options);
 
+    // -------For smooth anchor tag scrolling-----
+    $("a").on('click', function(event) {
+      if (this.hash !== ""){
+        event.preventDefault();
+        var hash = this.hash;
 
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
 });

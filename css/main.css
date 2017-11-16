@@ -44,12 +44,25 @@ table {
 }
 
 /*--------MY CSS---------------*/
-h1 { font-size: 3em; }
-h2 { font-size: 2em; }
+h1 {
+	font-size: 3em;
+	font-family: 'Montserrat', sans-serif;
+ }
+h2 {
+	font-size: 2em;
+	font-family: 'Merriweather Sans', sans-serif;
+}
 h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
+h4 {
+	font-size: 1.12em;
+	font-family: 'Merriweather Sans', sans-serif;
+}
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+.dbl-spaced{
+	line-height:30px;
+}
 .no-padding{
 	padding-left: 0;
 	padding-right: 0;
@@ -66,10 +79,33 @@ h6 { font-size: .75em; }
 	transform: translate(-50%,30%);
 	width:10%;
 }
+.profile{
+	position: relative;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,4%);
+	width:15%;
+}
+.lang-img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:50%;
+}
 .landing-pg{
 	background-color: gray;
 	/*opacity: 1;*/
 	z-index: 1;
+}
+.spacer75{
+	width:100vw;
+	height:75px;
+}
+.spacer100{
+	width:100vw;
+	height:100px;
 }
 .splash-img{
 	width: 100vw;
@@ -86,9 +122,12 @@ h6 { font-size: .75em; }
 	text-align:center;
 	z-index: 1;
 	color:white;
+	font-weight: bolder;
 }
 .typed-txt{
 	font-size: 2em;
+	font-weight: normal;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 .typed-cursor{
 	font-size: 2em;
@@ -130,4 +169,41 @@ h6 { font-size: .75em; }
 	position: relative;
 	opacity:0;
 	transition: all cubic-bezier(0.7, 0.46, 0.4, 1.38) 1s;
+}
+.container-fluid{
+	height:101vh;
+	width: 100vw;
+}
+#about-txt{
+	position: relative;
+	height: 700px;
+	width: 100vw;
+	text-align: center;
+	margin-top: 30px;
+}
+.up{
+	z-index: 1;
+	position: fixed;
+	right:15px;
+	top:18%;
+}
+.down{
+	z-index: 1;
+	position: fixed;
+	right:15px;
+	top:25%;
+}
+.tabbed-txt{
+	text-indent: 30px;
+}
+.txt-justified{
+	text-align: justify;
+	padding: 0 40px;
+}
+.txt-centered{
+	text-align: center;
+}
+.link-basic,.link-basic:hover,.link-basic:visited{
+	color:#188ADA;
+	text-decoration: none;
 }
