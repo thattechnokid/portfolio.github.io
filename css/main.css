@@ -44,12 +44,16 @@ table {
 }
 
 /*--------MY CSS---------------*/
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
 .no-padding{
 	padding-left: 0;
 	padding-right: 0;
 }
-
-
 .no-margin{
 	margin-left: 0;
 	margin-right: 0;
@@ -75,10 +79,37 @@ table {
 	z-index: 1;
 }
 .welcome-txt{
-	height:500px;
 	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
 	z-index: 1;
 	color:white;
+}
+.typed-txt{
+	font-size: 2em;
+}
+.typed-cursor{
+	font-size: 2em;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 .click-to-scroll{
 	position: absolute;
@@ -89,6 +120,7 @@ table {
 	color: white;
 	font-weight: 600;
 	text-decoration: none;
+	font-size: 20px;
 }
 .click-to-scroll:hover{
 	text-decoration: none;
@@ -97,5 +129,5 @@ table {
 #clickToScroll{
 	position: relative;
 	opacity:0;
-	/*transition: all cubic-bezier(0.7, 0.46, 0.4, 1.38) 1s;*/
+	transition: all cubic-bezier(0.7, 0.46, 0.4, 1.38) 1s;
 }
