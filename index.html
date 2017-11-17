@@ -42,9 +42,9 @@
     </div>
     <!-- END of First Page -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="page2">
       <div class="row">
-        <div class="col-xs-12" id="page2">
+        <div class="col-xs-12">
           <img src="images/cmendoza.jpg" alt="Picture of Developer...Cristian Mendoza wearing google glasses" class="img-responsive img-circle profile">
         </div>
       </div>
@@ -67,24 +67,34 @@
               <i class="fa fa-arrow-down fa-stack-1x"></i>
             </span>
           </a> -->
+          <div class="breadcrumb">
+            <a href="#page1"><i class="fa fa-home fa-2x link-basic"></i></a>
+            <div class="breadcrumb-spacer"></div>
+            <a href="#page2" class="txt-centered link-basic">My<br>Story</a>
+            <div class="breadcrumb-spacer"></div>
+            <a href="#page3" class="txt-centered link-basic hidden" id="bCrumbLnk3"><i class="fa fa-language fa-2x"></i></a>
+            <div class="breadcrumb-spacer"></div>
+            <a href="#page4" class="txt-centered link-basic hidden" id="bCrumbLnk4"><i class="fa fa-desktop fa-2x"></i></a>
+          </div>
         </div>
       </div>
     </div>
     <!---END of page 2--------->
-    <div class="container-fluid">
+    <div class="container-fluid" id="page3">
       <div class="row">
         <div class="col-xs-12">
+          <div class="spacer100"></div>
           <h1 class="txt-centered">Languages I Know</h1><br>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/html.jpg" alt="HTML 5 Logo" class="img-responsive lang-img">
         </div>
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/css.jpg" alt="CSS 3 Logo" class="img-responsive lang-img">
         </div>
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/jquery.jpg" alt="J Query Logo" class="img-responsive lang-img">
         </div>
       </div>
@@ -96,18 +106,37 @@
       </div>
       <div class="spacer75"></div>
       <div class="row">
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/jquery.jpg" alt="J Query Logo" class="img-responsive lang-img">
         </div>
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/js.jpg" alt="Java Script Logo" class="img-responsive lang-img">
         </div>
-        <div class="col-md-4" style="height:300px">
+        <div class="col-sm-4" style="height:300px">
           <img src="images/php.jpg" alt="PHP Logo" class="img-responsive lang-img">
         </div>
       </div>
     </div>
 
+    <!-- END of Page 3 -->
+    <div class="spacer100" id="page4"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="txt-centered">My Websites</h1>
+        </div>
+      </div>
+      <div class="spacer100"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="tabbed-txt dbl-spaced txt-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</h4>
+        </div>
+        <div class="col-md-5">
+          <img src="images/my-sites/chemistry.png" alt="Picture of Cristian's Chemistry Website made with Webs" class="img-responsive img-sites">
+        </div>
+
+      </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/typed.js/lib/typed.min.js"></script>

@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $(".breadcrumb").addClass("hidden");
+  
   $("#clickToScroll").animate({
     bottom:'75px',
     opacity:'1.0'
@@ -29,4 +31,29 @@ $(document).ready(function(){
         });
       }
     });
+
+
+    $(window).scroll(function(){
+      var scrollHeight1 = document.getElementById('page1').scrollHeight;
+      // console.log(scrollHeight1);
+      var scrollHeight2 = document.getElementById('page2').scrollHeight;
+      // console.log(scrollHeight2);
+
+      if ($(document).scrollTop() >= 600) {
+        $(".breadcrumb").removeClass("hidden");
+        $(".breadcrumb").addClass("visible");
+      }else{
+        $(".breadcrumb").removeClass("visible");
+        $(".breadcrumb").addClass("hidden");
+      }
+      if ($(document).scrollTop() >= 1420.04) {
+        $(".breadcrumb").css("height","140px");
+        $("#bCrumbLnk3").removeClass("hidden");
+      }else{
+        $(".breadcrumb").css("height","100px");
+        $("#bCrumbLnk3").addClass("hidden");
+      }
+    });
+
+
 });
