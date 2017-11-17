@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".breadcrumb").addClass("hidden");
-  
+  $(".breadcrumb").css("height","100px");
+
   $("#clickToScroll").animate({
     bottom:'75px',
     opacity:'1.0'
@@ -52,6 +53,13 @@ $(document).ready(function(){
       }else{
         $(".breadcrumb").css("height","100px");
         $("#bCrumbLnk3").addClass("hidden");
+      }
+      if ($(document).scrollTop() >= 2130.06) {
+        $(".breadcrumb").css("height","180px");
+        $("#bCrumbLnk4").removeClass("hidden");
+      }else{
+        $(".breadcrumb").css("height","140px");
+        $("#bCrumbLnk4").addClass("hidden");
       }
     });
 
