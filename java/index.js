@@ -2,6 +2,21 @@ $(document).ready(function(){
   // $(".breadcrumb").addClass("hidden");
   // $(".breadcrumb").css("height","100px");
 
+
+      var width = $(document).width();
+
+      if (width <= 768) {
+        $(".page4-desktop").addClass("hidden");
+        $(".page4-mobile").removeClass("hidden");
+        $("#clickToScroll").animate({
+          bottom:'100px',
+          opacity:'1.0'
+        },500);
+      }else{
+        $(".page4-desktop").removeClass("hidden");
+        $(".page4-mobile").addClass("hidden");
+      }
+
   $("#clickToScroll").animate({
     bottom:'75px',
     opacity:'1.0'
@@ -60,14 +75,5 @@ $(document).ready(function(){
     //   }
     // });
 
-    var width = $(document).width();
-
-    if (width <= 768) {
-      $(".page4-desktop").addClass("hidden");
-      $(".page4-mobile").removeClass("hidden");
-    }else{
-      $(".page4-desktop").removeClass("hidden");
-      $(".page4-mobile").addClass("hidden");
-    }
 
 });
