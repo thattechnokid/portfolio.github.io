@@ -10,6 +10,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .click-to-scroll{
+    transform: translate(-50%,-90%);
+  }
   #page2{
   	height:1900px;
   	position: relative;
