@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $(".breadcrumb").addClass("hidden");
-  $(".breadcrumb").css("height","100px");
+  // $(".breadcrumb").addClass("hidden");
+  // $(".breadcrumb").css("height","100px");
 
   $("#clickToScroll").animate({
     bottom:'75px',
@@ -34,6 +34,7 @@ $(document).ready(function(){
     });
 
 
+
     // $(window).scroll(function(){
     //
     //   if ($(document).scrollTop() >= 600) {
@@ -59,5 +60,14 @@ $(document).ready(function(){
     //   }
     // });
 
+    var width = $(document).width();
+
+    if (width <= 768) {
+      $(".page4-desktop").addClass("hidden");
+      $(".page4-mobile").removeClass("hidden");
+    }else{
+      $(".page4-desktop").removeClass("hidden");
+      $(".page4-mobile").addClass("hidden");
+    }
 
 });

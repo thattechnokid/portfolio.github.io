@@ -1,6 +1,10 @@
 
 
 /*--------MY CSS---------------*/
+*:not(img)::selection{
+	background-color: rgba(28, 90, 165, 0.9);
+	color:white;
+}
 h1 {
 	font-size: 3em;
 	font-family: 'Montserrat', sans-serif;
@@ -18,7 +22,7 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 .hidden{
-	visibility: hidden;
+	display: none;
 }
 .visible{
 	visibility: visible;
@@ -220,6 +224,12 @@ h6 { font-size: .75em; }
 .link-basic:hover{
 	color: #1C5AA5;
 	text-decoration: none;
+}
+.link-basic::selection{
+	background-color: rgba(28, 90, 165, 0.9);
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: white;
 }
 .buttons, .buttons:visited{
 	background:#325fd1;
