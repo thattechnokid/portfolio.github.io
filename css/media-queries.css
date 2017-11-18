@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 768px) {
   #page2{
-  	height:2200px;
+  	height:1900px;
   	position: relative;
   }
   #page3{
@@ -24,4 +24,4 @@
   .logo{
     width:20%;
   }
-}
+} /*This was for phones.
