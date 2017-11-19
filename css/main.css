@@ -309,3 +309,19 @@ h6 {
 	top:50%;
 	left:50%;
 }
+.contact-div{
+	position: relative;
+	height: 300px;
+	width:100vw;
+	/*transition: all 2s ease;*/
+}
+.contact-img:hover,#contactTxt:hover{
+	cursor: pointer;
+}
+.contact-img{
+	position: absolute;
+	/*z-index: ;*/
+	width: 100%;
+	filter: blur(2px);
+	clip: rect(0px,100vw,230.8866666666px,0px);
+}
