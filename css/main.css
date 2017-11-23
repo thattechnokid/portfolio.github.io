@@ -35,7 +35,10 @@ h6 {
 	font-size: .75em;
 	font-family: 'Merriweather Sans', sans-serif;
 }
-
+.centered-h{
+	top:50%;
+	left:50%;
+}
 .hidden{
 	display: none;
 }
@@ -296,7 +299,7 @@ h6 {
 .social-links{
 	transition: all .3s ease-in-out;
 	text-decoration: none;
-	margin:0 4px;
+	margin:0px;
 }
 .social-links:hover{
 	cursor: pointer;
@@ -308,6 +311,9 @@ h6 {
 	transform: translate(-50%,-50%);
 	top:50%;
 	left:50%;
+}
+.social-mgn{
+	margin:0px;
 }
 .contact-div{
 	position: relative;
@@ -324,4 +330,20 @@ h6 {
 	width: 100%;
 	filter: blur(2px);
 	clip: rect(0px,100vw,230.8866666666px,0px);
+}
+#closeButton{
+	transition: all .3s ease-in-out;
+	position: absolute;
+	top:14px;
+	right:0;
+	z-index: 1;
+	text-decoration: none;
+	/*transform: translate(-50%,-50%);*/
+}
+#closeButton:hover, #closeButton:visited, #closeButton:focus{
+	text-decoration: none;
+}
+#closeButton:hover{
+	transform: scale(1.2);
+	cursor: pointer;
 }

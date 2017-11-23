@@ -72,6 +72,9 @@ $(document).ready(function(){
     //     $("#bCrumbLnk4").addClass("hidden");
     //   }
     // });
+
+    // ------------CONTACT FORM DIV-----------------
+
     $("#contactMe").on('click',function(){
         $("#contactMe").animate({
           fontSize:'h1'
@@ -85,6 +88,7 @@ $(document).ready(function(){
               $(".contact-img").css({"clip":"rect(0px,100vw,500px,0px)","filter":"blur(0px)","transition":"all 2s ease"});
               $("#contactTxt").css({"transform":"translate(-50%,400%)","transition":"all 2s ease"});
               $(".contact-div").css({"height":"2000px","transition":"all 2s ease"});
+              $("#closeButton").removeClass("hidden");
             }
           },4000);
 
