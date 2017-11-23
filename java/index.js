@@ -117,6 +117,8 @@ $(document).ready(function(){
     });
 
     function startRefresh(){
+      $("#contactDiv").css({"height":"230.8866666px","width":"100%","transition":"all 2s ease"});
+      $(".contact-div").css({"height":"300px","transition":"all 2s ease"});
       $.get('contact-reset.html', function(data) {
         $('#contactMe').html(data);
     });
