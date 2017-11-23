@@ -117,7 +117,7 @@ $(document).ready(function(){
     });
 
     function startRefresh(){
-      $.get('index.html', function(data) {
+      $.get('contact-reset.html', function(data) {
         $('#contactMe').html(data);
     });
     }
