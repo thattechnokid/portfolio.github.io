@@ -103,6 +103,18 @@
 
            <h1 class="txt-centered" id="contactTxt" style="position:absolute;transform:translate(-50%,-90%);top:50%;left:50%;z-index:1">Contact&nbsp;Me</h1>
            <img src="images/contact-hero.jpg" alt="Picture of programmer writing a letter" class="contact-img">
+           <div class="row">
+             <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 hidden" id="contactForm">
+               <form class="contact-form" action="https://www.formspree.io/mendozawebsites@gmail.com" method="post">
+                 <label>Name: </label><input type="text" name="Name" required autofocus placeholder="John Doe"> <br><br>
+                 <label>Email Address: </label><input type="email" name="_replyto" required placeholder="example@example.com"> <br><br>
+                 <label>Phone Number: </label><input type="tel" name="Telephone" placeholder="(123) 456-7890"><br><br>
+                 <label>Message: </label><textarea name="Message" rows="8" cols="60" required placeholder="Your Message Here"></textarea>
+                 <input type="submit" name="Button" value="Send Message" class="buttons">
+                 <input type="hidden" name="_subject" value="You Have a New Message!">
+               </form>
+             </div>
+           </div>
          </div>
        </div>
      </div>
@@ -382,8 +394,13 @@
         <hr style="width:70%;color:#EBE7DC;margin-top:20px;padding:bottom:10px">
         <h5 class="txt-centered">&copy;&nbsp;Cristian&nbsp;Mendoza&nbsp;&&nbsp;Mendoza&nbsp;Web&nbsp;Design 2017&nbsp;-&nbsp;Present</h5>
       </div>
-      <div class="col-md-4">
-
+      <div class="col-md-4" style="height:400px">
+        <div class="row">
+          <div class="col-xs-12">
+            <h6 style="color:white" class="txt-centered"> <a href="#page1" class="link-basic">Home</a> > <a href="#page2" class="link-basic">My Story</a><a href="#contactMe" class="link-basic">Contact Me</a><a href="#page3" class="link-basic">Knowledge</a><a href="#page4" class="link-basic">Experience</a>
+            </h6>
+          </div>
+        </div>
       </div>
     </div>
   </div>

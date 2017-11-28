@@ -35,6 +35,12 @@ h6 {
 	font-size: .75em;
 	font-family: 'Merriweather Sans', sans-serif;
 }
+label{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+input{
+	font-family: 'Merriweather Sans', sans-serif;
+}
 .centered-h{
 	top:50%;
 	left:50%;
@@ -346,4 +352,12 @@ h6 {
 #closeButton:hover{
 	transform: scale(1.2);
 	cursor: pointer;
+}
+.contact-form{
+	position: absolute;
+	/*height: inherit;*/
+	margin-top: 800px;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }

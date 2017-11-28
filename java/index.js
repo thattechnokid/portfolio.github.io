@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // $(".breadcrumb").addClass("hidden");
   // $(".breadcrumb").css("height","100px");
-
+  // $("#contactForm").hide();
 
       var width = $(document).width();
 
@@ -89,8 +89,13 @@ $(document).ready(function(){
               $("#contactTxt").css({"transform":"translate(-50%,400%)","transition":"all 2s ease"});
               // $(".contact-div").css({"height":"2000px","transition":"all 2s ease"});
               $("#closeButton").removeClass("hidden");
+              $("#contactForm").removeClass("hidden");
+              $("#contactForm").fadeIn(2000);
+
+
             }
           },4000);
+        // $("#contactForm").slideDown();
 
     });
 
@@ -119,6 +124,7 @@ $(document).ready(function(){
     function startRefresh(){
       $("#contactDiv").css({"height":"230.8866666px","width":"100%","transition":"all 2s ease"});
       $(".contact-div").css({"height":"300px","transition":"all 2s ease"});
+      $("#contactForm").addClass("hidden");
       $.get('contact-reset.html', function(data) {
         $('#contactMe').html(data);
     });
