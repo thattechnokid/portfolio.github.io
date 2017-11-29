@@ -313,10 +313,7 @@ input{
 	transform: scale(1.5);
 }
 .social-container{
-	position: absolute;
-	transform: translate(-50%,-50%);
-	top:50%;
-	left:50%;
+	padding-top: 7em;
 }
 .social-mgn{
 	margin:0px;
