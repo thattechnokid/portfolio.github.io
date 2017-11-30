@@ -10,6 +10,9 @@
   #page4{
   	height: 2950px;
   }
+  #breadcrumb{
+    margin-top:14em
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -45,5 +48,8 @@
   }
   .img-sites{
     width: 90%;
+  }
+  #breadcrumb{
+    margin-top:30px
   }
 } /*This was for phones.

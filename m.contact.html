@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+  </head>
+  <body>
+    <!-- CONTACT DIV -->
+    <div class="container-fluid no-padding contact-div" id="contactMe">
+      <div class="row">
+        <div class=" col-xs-12" id="contactDiv" style="height:1000px">
+
+          <span class="fa-stack fa-2x" id="closeButton" style="right:3%">
+            <i class="fa fa-circle fa-stack-2x"style="color:rgba(0,0,0,0.4)"></i>
+            <i class="fa fa-times fa-stack-1x" style="color:white"></i>
+          </span>
+
+          <h1 class="txt-centered" id="contactTxt" style="position:absolute;transform:translate(-50%,-550%);top:50%;left:50%;z-index:1">Contact&nbsp;Me</h1>
+          <img src="images/contact-hero.jpg" alt="Picture of programmer writing a letter" style="clip: rect(0px,100vw,500px,0px);width:100%;position:absolute">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 hidden" id="contactForm">
+              <form class="contact-form" action="https://formspree.io/mendozawebsites@gmail.com" method="post">
+                <label>Name: </label><input type="text" name="Name" required autofocus placeholder="John Doe"> <br><br>
+                <label>Email Address: </label><input type="email" name="_replyto" required placeholder="example@example.com"> <br><br>
+                <label>Phone Number: </label><input type="tel" name="Telephone" placeholder="(123) 456-7890"><br><br>
+                <label>Message: </label><textarea name="Message" rows="8" cols="60" required placeholder="Your Message Here"></textarea>
+                <input type="submit" name="Button" value="Send Message" class="buttons">
+                <input type="hidden" name="_subject" value="You Have a New Message!">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/typed.js/lib/typed.min.js"></script>
+    <script>
+    $("#closeButton").on('click',function(){
+      window.open("https://mendoza-portfolio.netlify.com/index.html/#contactMe","_self")
+    });
+    </script>
+  </body>
+</html>

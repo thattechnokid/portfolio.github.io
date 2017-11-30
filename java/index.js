@@ -6,6 +6,9 @@ $(document).ready(function(){
       var width = $(document).width();
 
       if (width <= 768) {
+        $("#contactTxt").on('click',function() {
+            window.open("https://mendoza-portfolio.netlify.com/m.contact.html","_self")
+        });
         $(".page4-desktop").addClass("hidden");
         $(".page4-mobile").removeClass("hidden");
         $("#clickToScroll").animate({
