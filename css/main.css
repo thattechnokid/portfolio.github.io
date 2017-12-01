@@ -6,10 +6,7 @@
 	color:white;
 }
 body{
-background-image: url(../images/noisy-texture.png);
-background-position: center;
-background-repeat: repeat;
-overflow-x: hidden;
+	overflow-x: hidden;
 }
 h1 {
 	font-size: 3em;
@@ -42,8 +39,9 @@ input{
 	font-family: 'Merriweather Sans', sans-serif;
 }
 .centered-h{
-	top:50%;
+	position:relative;
 	left:50%;
+	transform:translate(-50%,-0%);
 }
 .hidden{
 	display: none;
@@ -57,8 +55,8 @@ input{
 .static{
 	position: static;
 }
-.dbl-spaced{
-	line-height:36px;
+.spacing{
+	line-height:22px;
 }
 .no-padding{
 	padding-left: 0;
@@ -89,7 +87,7 @@ input{
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
-	width:50%;
+	width:40%;
 }
 .img-sites{
 	position: relative;
@@ -201,6 +199,18 @@ input{
 	text-align: center;
 	margin-top: 30px;
 }
+#page1, #page2{
+	background-image: url(../images/noisy-texture.png);
+	background-position: center;
+	background-repeat: repeat;
+	overflow-x: hidden;
+}
+#page3, #page4, #contactMe{
+	background-image: url(../images/noisy-texture-white.png);
+	background-position: center;
+	background-repeat: repeat;
+	overflow: hidden;
+}
 /*.up{
 	z-index: 1;
 	position: fixed;
@@ -268,6 +278,11 @@ input{
 	border-color: #325fd1;
 	border-width: 4px;
 	border-style: inset;
+}
+.buttons:not(.send):not(.page4-mobile){
+	position:relative;
+	left:50%;
+	transform:translate(-50%,-0%);
 }
 .footer{
 	width: 100vw;

@@ -87,7 +87,6 @@ $(document).ready(function(){
               window.location.href = "#contactMe";
               $(".contact-div").css({"height":"1000px","transition":"all 2s ease"});
               $("#contactDiv").css({"height":"100%","width":"100vw","transition":"all 2s ease"});
-              $("#contactDiv").removeClass("col-md-10 col-md-offset-1");
               $(".contact-img").css({"clip":"rect(0px,100vw,500px,0px)","filter":"blur(0px)","transition":"all 2s ease"});
               $("#contactTxt").css({"transform":"translate(-50%,400%)","transition":"all 2s ease"});
               // $(".contact-div").css({"height":"2000px","transition":"all 2s ease"});
